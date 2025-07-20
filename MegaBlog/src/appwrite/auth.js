@@ -21,9 +21,10 @@ export class AuthService {
                 //another method direct login
                 // return userAccount
                 return this.login({email,password});
-            }else{
-                return userAccount;
             }
+            // else{
+            //     return userAccount;
+            // }
 
         } catch (error) {
             throw error;
@@ -45,8 +46,8 @@ export class AuthService {
             
         } catch (error) {
             console.log("appwrite service :: getCurrentUser :: error",error)
+            return null;
         }
-        return null;
     }
     
     async logout(){
