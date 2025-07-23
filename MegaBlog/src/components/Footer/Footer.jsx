@@ -21,47 +21,7 @@ return (
                     </div>
 
 
-                    <div className="w-full p-6 md:w-1/2 lg:w-2/12">
-                        <div className="h-full">
-                            <h3 className="mb-6 md:mb-9 text-xs font-semibold uppercase text-gray-600 tracking-wide">
-                                Company
-                            </h3>
-                            <ul>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-gray-700 hover:text-blue-600 transition-colors duration-300"
-                                        to="/"
-                                    >
-                                        Features
-                                    </Link>
-                                </li>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-gray-700 hover:text-blue-600 transition-colors duration-300"
-                                        to="/"
-                                    >
-                                        Pricing
-                                    </Link>
-                                </li>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-gray-700 hover:text-blue-600 transition-colors duration-300"
-                                        to="/"
-                                    >
-                                        Affiliate Program
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        className=" text-base font-medium text-gray-700 hover:text-blue-600 transition-colors duration-300"
-                                        to="/"
-                                    >
-                                        Press Kit
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+
                     <div className="w-full p-6 md:w-1/2 lg:w-2/12">
                         <div className="h-full">
                             <h3 className="mb-6 md:mb-9 text-xs font-semibold uppercase text-gray-600 tracking-wide">
@@ -92,50 +52,11 @@ return (
                                         Contact Us
                                     </Link>
                                 </li>
-                                <li>
-                                    <Link
-                                        className=" text-base font-medium text-gray-700 hover:text-blue-600 transition-colors duration-300"
-                                        to="/"
-                                    >
-                                        Customer Support
-                                    </Link>
-                                </li>
+
                             </ul>
                         </div>
                     </div>
-                    <div className="w-full p-6 md:w-1/2 lg:w-3/12">
-                        <div className="h-full">
-                            <h3 className="mb-6 md:mb-9 text-xs font-semibold uppercase text-gray-600 tracking-wide">
-                                Legals
-                            </h3>
-                            <ul>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-gray-700 hover:text-blue-600 transition-colors duration-300"
-                                        to="/"
-                                    >
-                                        Terms &amp; Conditions
-                                    </Link>
-                                </li>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-gray-700 hover:text-blue-600 transition-colors duration-300"
-                                        to="/"
-                                    >
-                                        Privacy Policy
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        className=" text-base font-medium text-gray-700 hover:text-blue-600 transition-colors duration-300"
-                                        to="/"
-                                    >
-                                        Licensing
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </section>

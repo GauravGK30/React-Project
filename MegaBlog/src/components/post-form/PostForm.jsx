@@ -11,7 +11,7 @@ export default function PostForm({post}) {
     const {register,handleSubmit,watch,setValue,control,getValues} = useForm({
         defaultValues:{
             title: post?.title|| '',
-            slug: post?.$id|| '',
+            slug: post?.slug|| '',
             content: post?.content|| '',
             status: post?.status|| 'active',
         },
@@ -25,12 +25,12 @@ export default function PostForm({post}) {
         if(post){
             const file = data.image[0] ? await appwriteService.uploadFile(data.image[0]): null
 
-            if(file){
+            if(file && file.$id){
                 appwriteService.deleteFile(post.featuredImage)
             }
             const dbPost = await appwriteService.updatePost(post.$id,{
                 ...data,
-                featuredImage:file ? file.$id :undefined,
+                featuredImage:file ? file.$id : post.featuredImage,
             })
 
             if (dbPost) {
@@ -56,13 +56,13 @@ export default function PostForm({post}) {
 
     const slugTransform = useCallback((value)=>{
         if(value && typeof value==='string')
-        return value
-            .trim()
-            .toLowerCase()
-            .replace(/[^a-zA-Z\d\s]+/g, "-")
-            .replace(/\s/g, "-");
+            return value
+                .trim()
+                .toLowerCase()
+                .replace(/[^a-zA-Z\d\s]+/g, "-")
+                .replace(/\s/g, "-");
         
-            return ''
+        return ''
     },[])
 
     React.useEffect(()=>{
